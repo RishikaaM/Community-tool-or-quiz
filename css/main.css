@@ -1,0 +1,92 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.question h2 {
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.options label {
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect for labels that are not selected */
+.options label:not(.selected):hover {
+background: rgba(255, 255, 255, 0.3);
+}
+
+/* Style for selected option, ensuring no change on hover */
+.options .selected, .options .selected:hover {
+background-color: #4CAF50; /* Green background for selected option */
+color: #FFFFFF; /* White text for contrast */
+/* Any other styling for selected options */
+}
+
+.options input[type="radio"] {
+  display: none;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.options .selected {
+  background-color: #4caf50; /* Example: a green background */
+  color: #ffffff; /* White text for better contrast */
+  /* Add any other styling you wish for selected options here */
+}
+
+#advice {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(76, 175, 80, 0.3); /* Soft green background */
+    color: #ffffff;
+    border-radius: 5px;
+}
